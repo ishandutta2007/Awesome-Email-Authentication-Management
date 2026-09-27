@@ -1,107 +1,106 @@
-# Awesome-Email-Authentication-Management
+# 📧 Awesome Email Authentication & Security Management 🛡️
 
-## Top Email Authentication Management Platforms Ecosystem
+<p center align="center">
+  <img src="assets/banner.svg" alt="Awesome Email Authentication & Security Management Banner" width="100%" />
+</p>
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-*Focused on DMARC Enforcement, SPF/DKIM Alignment, BIMI Deployment & Email Fraud Defense*
-**Last updated: September 2026**
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Email-Authentication-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Email-Authentication-Management?style=flat-square&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Email-Authentication-Management/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Email-Authentication-Management?style=flat-square&color=blue" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Email-Authentication-Management/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Email-Authentication-Management?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Email Authentication Management**. These tools help organizations monitor DMARC aggregate reports, troubleshoot SPF and DKIM alignment failures, enforce p=quarantine/p=reject policies, and deploy BIMI for brand trust.
+---
 
-**Examples** include Valimail, EasyDMARC, dmarcian, PowerDMARC, Red Sift OnDMARC, Mimecast DMARC Analyzer, Proofpoint Email Fraud Defense, Sendmarc, URIports, and DMARCLY (the category leaders).
+## 🚀 Overview & Market Landscape
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom report parsing, and transparent email authentication data — ideal for MSPs and security teams that want unlimited domain monitoring without per-report SaaS quotas or vendor lock-in.
+Welcome to the **Awesome Email Authentication & Security Management** directory! This repository tracks top **SaaS platforms** and **Open-Source GitHub projects** for managing **DMARC enforcement**, **SPF alignment & flattening**, **DKIM signature validation**, **MTA-STS**, and **BIMI (Brand Indicators for Message Identification)** deployment.
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+### 📊 Sector Market Size & Industry Dynamics
 
-## Table of Contents
+> 💡 **Market Size & Structure**: The global Email Fraud Defense and DMARC Security market size is estimated at **$1.8 Billion – $2.5 Billion+**, growing at a CAGR of ~22%. The market is **moderately fragmented**: enterprise email security suites (such as Proofpoint and Mimecast) dominate large enterprise suites, while specialized pure-play DMARC providers (Valimail, Red Sift, EasyDMARC) and flexible open-source self-hosted parsers capture the growing SMB, MSP, and developer landscape.
 
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+---
 
-## SaaS/Hosted Platforms
+## 📑 Table of Contents
 
-- **[Valimail](https://www.valimail.com/)**
-  DMARC and email authentication platform with automated enforcement. Provides continuous monitoring, sender identification, and BIMI deployment for enterprises.
+- [🏢 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [⚡ Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
 
-- **[EasyDMARC](https://easydmarc.com/)**
-  DMARC management platform with affordable pricing for SMBs and MSPs. Provides aggregate report parsing, SPF flattening, and hosted DMARC records.
+---
 
-- **[dmarcian](https://dmarcian.com/)**
-  Veteran DMARC platform known for its education-focused approach and free tier. Provides report analysis, sender identification, and phased enforcement guidance.
+## 🏢 SaaS / Hosted Platforms
 
-- **[PowerDMARC](https://powerdmarc.com/)**
-  Multi-tenant DMARC, SPF, DKIM, and BIMI management platform. Strong MSP features with white-labeling and API access.
+Below is a detailed comparison of enterprise and SMB SaaS products for DMARC monitoring, SPF flattening, and email security enforcement, sorted by estimated company size / market valuation (descending).
 
-- **[Red Sift OnDMARC](https://redsift.com/)**
-  Enterprise DMARC platform with advanced analytics, BIMI, and MTA-STS. Acquired by Red Sift, integrates with broader cybersecurity offerings.
+| Platform / Product | Description | Starting Paid Pricing | Free Tier / Trial Limit | Est. Company Size / Valuation |
+| :--- | :--- | :--- | :--- | :--- |
+| 🛡️ **[Proofpoint Email Fraud Defense](https://www.proofpoint.com/)** | Enterprise email fraud protection with automated DMARC enforcement & supply chain defense. | ~$3.00 – $6.00 / user / month (Enterprise quotes) | 30-Day Free Enterprise Demo Trial | **~$12.3 Billion** (Acquired by Thoma Bravo; ~$2.5B annual revenue) |
+| 📧 **[Mimecast DMARC Analyzer](https://www.mimecast.com/)** | Integrated DMARC reporting module within Mimecast's email security & gateway suite. | ~$3.50 / user / month (Security suite bundle) | 30-Day Free Trial (Mimecast Suite) | **~$5.8 Billion** (Acquired by Permira; ~$650M annual revenue) |
+| 🔴 **[Red Sift OnDMARC](https://redsift.com/)** | Enterprise DMARC, BIMI, MTA-STS, and automated SPF dynamic record management. | $49 / month (Essentials Plan) | 14-Day Free Trial (Full features, no credit card required) | **~$300 Million+** (Series B funded, $54M+ total raised) |
+| 🔒 **[Valimail](https://www.valimail.com/)** | Zero-touch automated DMARC enforcement, continuous monitoring, and BIMI readiness. | $499 / month (Valimail Enforce) | Free forever (Valimail Align: 1 domain, basic aggregate visibility) | **~$200 Million+** ($85M+ venture funding raised) |
+| ⚡ **[EasyDMARC](https://easydmarc.com/)** | All-in-one DMARC solution for SMBs and MSPs with SPF flattening & reputation tracking. | $35 / month (Plus Plan) | Free forever (1 domain, up to 10,000 DMARC aggregate compliance reports/mo) | **~$100 Million+** (Series A funded, $20M+ raised) |
+| 🔑 **[dmarcian](https://dmarcian.com/)** | Veteran DMARC management platform offering step-by-step enforcement guidance. | $24 / month (Basic Plan) | Free forever (1 domain, up to 10,000 DMARC aggregate compliance reports/mo) | **~$50 Million – $100 Million** (Bootstrapped / Profitable market leader) |
+| 🛡️ **[Sendmarc](https://sendmarc.com/)** | DMARC & BIMI enforcement platform with MSP multi-tenancy and 90-day enforcement guarantee. | $49 / month (Professional Plan) | 14-Day Free Trial (Unlimited domains during trial) | **~$35 Million – $70 Million** (Series A funded, $7M+ raised) |
+| 🚀 **[PowerDMARC](https://powerdmarc.com/)** | Multi-tenant DMARC, SPF, DKIM, MTA-STS, and BIMI platform with white-labeling for MSPs. | $9.99 / month (Basic Plan) | 15-Day Free Trial (Full MSP features, 10,000 reports) | **~$20 Million – $50 Million** (Rapidly growing bootstrapped/backed MSP provider) |
+| 🌐 **[URIports](https://www.uriports.com/)** | Lightweight, high-performance domain security monitoring for DMARC, TLS-RPT, CSP, and Certificate Transparency. | $1.02 / month ($12/yr starting tier) | 30-Day Free Trial (Full platform features up to 100,000 reports) | **~$5 Million – $15 Million** (Independent profitable SaaS) |
+| 📊 **[DMARCLY](https://dmarcly.com/)** | Streamlined DMARC, SPF flattener, DKIM, and hosted DMARC record management for IT teams. | $18 / month (Basic Plan) | 14-Day Free Trial (1 domain, full features) | **~$5 Million – $10 Million** (Independent bootstrapped SaaS) |
 
-- **[Mimecast DMARC Analyzer](https://www.mimecast.com/)**
-  DMARC module within the Mimecast email security suite. Provides report analysis and enforcement guidance integrated with Mimecast's gateway.
+---
 
-- **[Proofpoint Email Fraud Defense](https://www.proofpoint.com/)**
-  Email fraud defense with DMARC enforcement and supplier chain protection. Part of Proofpoint's broader email security ecosystem.
+## ⚡ Open-Source GitHub Projects
 
-- **[Sendmarc](https://sendmarc.com/)**
-  DMARC platform with a strong MSP focus and 90-day enforcement guarantee. Covers DMARC, SPF, DKIM, MTA-STS, and BIMI with hosted BIMI record management and VMC/CMC certificate purchasing assistance. Known for hands-on expert support during enforcement .
+Self-hosted email authentication parsers, validation libraries, and domain checkers. Sorted by GitHub Star count (descending).
 
-- **[URIports](https://www.uriports.com/)**
-  Unified domain monitoring platform covering DMARC, TLS-RPT, CSP, DNS, and SSL/TLS certificates. Provides DMARC enforcement guidance and hosted MTA-STS. Pricing tiered by report volume and domain count .
+| Project Name | Stars | Description | Stack / Category |
+| :--- | :---: | :--- | :--- |
+| 🐍 **[checkdmarc](https://github.com/domainaware/checkdmarc)** | [<img src="https://img.shields.io/github/stars/domainaware/checkdmarc?style=social&color=white" alt="checkdmarc stars"/>](https://github.com/domainaware/checkdmarc/stargazers) | Parser and validator for DMARC, SPF, and DKIM DNS records. Standard CLI & library used across security tools. | Python |
+| 🔑 **[dkimpy](https://launchpad.net/dkimpy)** | [<img src="https://img.shields.io/github/stars/samg/dkimpy?style=social&color=white" alt="dkimpy stars"/>](https://github.com/samg/dkimpy/stargazers) | Python library for DKIM (DomainKeys Identified Mail) signing and verification, ARC, and DMARC record checks. | Python |
+| 📦 **[MailAuth](https://github.com/postalsys/mailauth)** | [<img src="https://img.shields.io/github/stars/postalsys/mailauth?style=social&color=white" alt="MailAuth stars"/>](https://github.com/postalsys/mailauth/stargazers) | Command-line utility and Node.js library for validating DKIM, SPF, DMARC, ARC, and BIMI signatures in emails. | JavaScript / Node.js |
+| 📊 **[DmarcSrg / dmarcts-report-parser](https://github.com/techsneeze/dmarcts-report-parser)** | [<img src="https://img.shields.io/github/stars/techsneeze/dmarcts-report-parser?style=social&color=white" alt="dmarcts-report-parser stars"/>](https://github.com/techsneeze/dmarcts-report-parser/stargazers) | Perl-based DMARC XML report parser that stores aggregated reports into MySQL/MariaDB for web visualization. | Perl / MySQL / PHP |
+| 📨 **[Viesti-Reports](https://github.com/antedebaas/Viesti-Reports)** | [<img src="https://img.shields.io/github/stars/antedebaas/Viesti-Reports?style=social&color=white" alt="Viesti-Reports stars"/>](https://github.com/antedebaas/Viesti-Reports/stargazers) | Self-hosted DMARC & SMTP-TLS aggregate report processor and web dashboard with BIMI SVG hosting capabilities. | PHP / Docker |
+| 🔍 **[DMARCus Analyzer](https://github.com/mmattavelli/dmarcus-app)** | [<img src="https://img.shields.io/github/stars/mmattavelli/dmarcus-app?style=social&color=white" alt="DMARCus Analyzer stars"/>](https://github.com/mmattavelli/dmarcus-app/stargazers) | Flask web app for parsing XML/GZIP DMARC reports with interactive charts, GeoIP mapping, and flat-file storage. | Python / Flask |
+| 🛡️ **[DMARQ](https://github.com/christianlouis/dmarq)** | [<img src="https://img.shields.io/github/stars/christianlouis/dmarq?style=social&color=white" alt="DMARQ stars"/>](https://github.com/christianlouis/dmarq/stargazers) | Modern self-hosted DMARC aggregate & RUF failure report processor, TLS-RPT dashboard, Cloudflare DNS automation, and Apprise alerts. | TypeScript / React / Docker |
+| 📈 **[DMARC Analyzer](https://github.com/dmarc-analyzer/dmarc-analyzer)** | [<img src="https://img.shields.io/github/stars/dmarc-analyzer/dmarc-analyzer?style=social&color=white" alt="DMARC Analyzer stars"/>](https://github.com/dmarc-analyzer/dmarc-analyzer/stargazers) | Enterprise-grade self-hosted DMARC report parser with PostgreSQL backend, multi-domain support, and encrypted mailbox credentials. | Python / Docker |
+| 📋 **[MailPolicyExplainer](https://github.com/rhymeswithmogul/MailPolicyExplainer)** | [<img src="https://img.shields.io/github/stars/rhymeswithmogul/MailPolicyExplainer?style=social&color=white" alt="MailPolicyExplainer stars"/>](https://github.com/rhymeswithmogul/MailPolicyExplainer/stargazers) | PowerShell module to audit, test, and explain all email security records including SPF, DKIM, DMARC, and BIMI. | PowerShell |
+| 🧪 **[Akila Audit DMARC](https://github.com/urian121/akila-audit-dmarc)** | [<img src="https://img.shields.io/github/stars/urian121/akila-audit-dmarc?style=social&color=white" alt="Akila Audit DMARC stars"/>](https://github.com/urian121/akila-audit-dmarc/stargazers) | Python Flask API & HTMX frontend for continuous email auth auditing (SPF, DMARC, DKIM, MX, DNSSEC, MTA-STS) with optional AI summaries. | Python / HTMX |
 
-- **[DMARCLY](https://dmarcly.com/)**
-  DMARC monitoring and enforcement platform with SPF flattener and hosted DMARC records. Focused on simplifying DMARC for IT teams.
+---
 
-## Open-Source GitHub Projects
+## 🤝 How to Contribute
 
-- **[DMARC Analyzer](https://github.com/dmarc-analyzer/dmarc-analyzer)**
-  Comprehensive self-hosted DMARC monitoring platform for agencies and IT teams managing email authentication across many client domains. Ingests aggregate reports from a dedicated IMAP mailbox (rua= destination), parses XML reports, and displays sender identity, SPF/DKIM alignment, and enforcement progress. **Unlimited domains, no per-domain pricing.** Docker deployment with PostgreSQL. Mailbox credentials encrypted at rest. Apache-2.0 .
+Contributions are highly appreciated! To submit a new SaaS platform or Open-Source project:
 
-- **[DMARCus Analyzer](https://github.com/mmattavelli/dmarcus-app)**
-  Flask-based web application for parsing, analyzing, and visualizing DMARC aggregate reports. Parses XML, GZIP, and ZIP formats. Extracts SPF/DKIM results, policy dispositions, source IPs, and identifies internal vs external senders. Features interactive dashboard with time-series charts, GeoIP integration, CSV/JSON export, and flat-file JSON storage (no external database required). Includes security hardening: CSRF protection, rate limiting, defusedxml for XXE prevention, and strict session security .
+1. 🍴 Fork this repository.
+2. 📝 Update `README.md` following the tabular format and star links.
+3. 🔍 Ensure descriptions are accurate and include starting pricing / star counts.
+4. 🚀 Open a Pull Request with a short title.
 
-- **[DMARQ](https://github.com/christianlouis/dmarq)**
-  Self-hosted DMARC aggregate report processor and dashboard. Supports DMARC aggregate reports, inbound RUF/failure reports, SMTP TLS/TLS-RPT reports, DMARC/SPF/DKIM DNS linting, MTA-STS, and BIMI. Features health scoring, sender reputation checks, Cloudflare integration for DNS remediation (with explicit operator confirmation), Apprise-based alerts (email/Slack/webhook), and Docker Compose deployment. Web-based setup wizard. Logto-based authentication .
+---
 
-- **[DmarcSrg](https://github.com/techsneeze/dmarcts-report-parser)**
-  PHP parser, viewer, and summary report generator for incoming DMARC reports. View parsed reports in a table, identify issues through colors, filter by domain/month/reporting organization, view DKIM/SPF details, password-protected web interface, receive/process reports from mailboxes or local directories, upload reports via web UI, and generate weekly/monthly summary reports. Available in Debian repositories .
+## 💖 Support & Sponsorship
 
-- **[dmarcts-report-parser](https://github.com/techsneeze/dmarcts-report-parser)**
-  Perl-based DMARC report parser that stores reports in a MySQL/MariaDB database. Command-line tool for automated ingestion. Companion to DmarcSrg web viewer.
+If you find this repository helpful for your domain security, email authentication monitoring, or cybersecurity workflows, please consider supporting the project!
 
-- **[Viesti-Reports](https://github.com/antedebaas/Viesti-Reports)**
-  DMARC & SMTP-TLS reports processor and visualizer with BIMI file hosting. PHP-based, 95+ stars .
+- ⭐ **Star this repository** on GitHub to increase visibility!
+- 🔀 **Fork & Share** it with your fellow IT admins, MSPs, and security engineers.
+- ☕ **Buy me a coffee**: Sponsor this project on [GitHub Sponsors](https://github.com/sponsors/ishandutta2007)!
 
-- **[Akila Audit DMARC](https://github.com/urian121/akila-audit-dmarc)**
-  Python + Flask API for validating email authentication configuration: SPF, DMARC, DKIM, MX, DNSSEC, MTA-STS, TLS-RPT, BIMI. Uses checkdmarc and dkimpy. Features on-demand domain checking, continuous monitoring with PostgreSQL persistence, DNS record generation guidance, and optional AI summary via OpenAI. Frontend uses htmx .
+---
 
-- **[MailAuth](https://github.com/postalsys/mailauth)**
-  Command-line utility and Node.js library for email authentication. Supports DKIM, SPF, DMARC, ARC, and BIMI validation. 121 stars, JavaScript .
+## 📈 Star History
 
-- **[MailPolicyExplainer](https://github.com/rhymeswithmogul/MailPolicyExplainer)**
-  PowerShell module to test and explain all facets of a domain's email records including SPF, DKIM, DMARC, and BIMI .
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Email-Authentication-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Email-Authentication-Management&type=date&legend=top-left)
 
-### Additional Strong Open-Source Options
+---
 
-- **Report Parsing & Storage**: **DMARC Analyzer** (PostgreSQL, unlimited domains), **DmarcSrg** (PHP + MySQL), **dmarcts-report-parser** (Perl + MySQL).
-- **Validation Libraries**: **checkdmarc** (Python), **dkimpy** (Python DKIM), **mailauth** (Node.js).
-- **BIMI Tooling**: **SVG Tiny PS converters** (php-svg-ps-converter, svgtinyps-cli) for BIMI-compliant logo preparation.
-- **DNS Linting**: **MailPolicyExplainer** (PowerShell), **emaildnscheck** (Python).
+## ⚠️ Disclaimer
 
-**Frameworks for building custom systems**: Combine **DMARC Analyzer** for the core ingestion and dashboard, **checkdmarc** for real-time domain validation, **DmarcSrg** for PHP-based deployments, and **PostgreSQL** for persistence. Add **Apprise** for alert routing and **Cloudflare API** for DNS remediation.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Email authentication tools handle sensitive DNS and email flow data; ensure proper access controls and credential encryption.
-- Self-hosted open-source solutions require an IMAP mailbox for receiving reports, database infrastructure, and ongoing maintenance. The license is free; the operational cost is yours.
+- This list is **community-curated** for educational and reference purposes and does not constitute formal financial advice or official product endorsement.
+- Email authentication management tools process sensitive email metadata and DNS configurations; ensure appropriate security and access controls.
